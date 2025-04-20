@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install -y openssh-client
 RUN mkdir -p /root/.ssh && chmod 700 /root/.ssh
 
 # Add SSH keys
-COPY id_rsa /root/.ssh/id_rsa
-COPY id_rsa.pub /root/.ssh/id_rsa.pub
+COPY keys/id_rsa /root/.ssh/id_rsa
+COPY keys/id_rsa.pub /root/.ssh/id_rsa.pub
 
 # Set proper permissions for SSH keys
 RUN chmod 600 /root/.ssh/id_rsa && \

@@ -17,7 +17,7 @@ RUN mkdir -p /home/adam/.ssh && \
     chmod 700 /home/adam/.ssh
 
 # Copy public key
-COPY id_rsa.pub /home/adam/.ssh/authorized_keys
+COPY keys/id_rsa.pub /home/adam/.ssh/authorized_keys
 
 # Set correct permissions
 RUN chmod 600 /home/adam/.ssh/authorized_keys && \
