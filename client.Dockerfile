@@ -15,7 +15,7 @@ RUN chmod 600 /root/.ssh/id_rsa && \
     chmod 644 /root/.ssh/id_rsa.pub
 
 # Generate known_hosts file if needed
-# RUN ssh-keyscan github.com >> /root/.ssh/known_hosts
+# RUN ssh-keyscan ssh-server >> /root/.ssh/known_hosts
 
 # Your additional setup commands here
 # ...

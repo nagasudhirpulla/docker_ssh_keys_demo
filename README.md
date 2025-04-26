@@ -6,6 +6,10 @@
 ## Create ssh keys
 * Public and private RSA keys can be generated using the command `ssh-keygen -t rsa`
 
+## skip hostname trust while connecting to ssh
+* use `ssh -o StrictHostKeyChecking=no` to ignore hostname checking while ssh connection
+* If a particular hostname is to be added explicitly into known_hosts it can done by executing `ssh-keyscan hostname >> ~/.ssh/known_hosts`
+
 ## Tools
 * Use docker desktop for easy container interactions
 * Use Docker and Docker DX VS code extensions for docker desktop like experience in VS code itself
